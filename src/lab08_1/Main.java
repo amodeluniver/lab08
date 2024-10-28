@@ -10,18 +10,8 @@ package lab08_1;
  */
 public class Main {
     public static void main(String[] args) {
-        ProductoElectronico electronicos = new ProductoElectronico();
-        electronicos.agregarProducto("Laptop", 1500);
-        electronicos.agregarProducto("Smartphone", 800);
-
-        ProductoAlimento alimentos = new ProductoAlimento();
-        alimentos.agregarProducto("Manzana", 1.5);
-        alimentos.agregarProducto("Pan", 0.5);
-
-        System.out.println("Precios de electrónicos:");
-        electronicos.mostrarPrecios();
-
-        System.out.println("\nNombres y precios de alimentos:");
-        alimentos.mostrarNombreYPrecios();
+        for(int f = 0; f <= 150; f += 10) {
+            System.out.println(f + " degrees Fahrenheit is " + ((f - 32) * 5 / 9) + " degrees Celsius");
+        }
     }
 }
